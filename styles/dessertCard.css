@@ -1,0 +1,121 @@
+.dessert-image-container {
+  position: relative;
+  margin-bottom: 30px;
+  border-radius: 18px;
+  border: solid 4px var(--color-background);
+}
+
+.dessert-image {
+  border-radius: 15px;
+}
+
+.dessert-type {
+  color: var(--color-secondary);
+  font-weight: 400;
+}
+
+.dessert-name {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.dessert-price {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.cart-control {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  width: 12em;
+  height: 2.8em;
+  border-radius: 100em;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.add-to-cart-btn {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: inherit;
+  border: solid 1px var(--color-primary);
+  background-color: white;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-to-cart-btn img {
+  max-width: 1.5em;
+  margin-right: 7px;
+}
+
+.add-to-cart-btn p {
+  display: block;
+}
+
+.add-to-cart-btn:active {
+  color: var(--color-primary);
+  border: solid 2px;
+  background-color: var(--color-background);
+}
+
+.quantity-control {
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  overflow: hidden;
+  color: var(--color-background);
+}
+
+.quantity-control span {
+  user-select: none;
+}
+
+.quantity-btn {
+  font-size: 1rem;
+  font-weight: 100;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  padding: 0px;
+  margin: 15px;
+  cursor: pointer;
+  color: inherit;
+  border: solid 1px var(--color-background);
+  background-color: inherit;
+}
+
+.quantity-btn:active {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.plus span {
+  align-self: center;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.minus span {
+  position: relative;
+  align-self: center;
+  font-size: 1.75rem;
+  transform: translateY(-4%);
+}
+.quantity {
+  padding: 5px;
+  align-self: center;
+}

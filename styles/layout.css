@@ -1,0 +1,107 @@
+body {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 5em;
+  margin-bottom: auto;
+  justify-content: center;
+}
+
+.desserts {
+  display: block;
+  max-width: fit-content;
+}
+
+.desserts > h1 {
+  max-width: fit-content;
+  margin-bottom: 0.5em;
+}
+
+.desserts-list {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  margin-right: 2em;
+}
+
+@media (max-width: 1369px) {
+  .desserts-list {
+    grid-template-columns: repeat(3, 240px);
+  }
+  .cart-container {
+    min-width: 330px !important;
+  }
+}
+
+@media (max-width: 1150px) {
+  .desserts-list {
+    grid-template-columns: repeat(2, 280px);
+  }
+
+  .cart-container {
+    min-width: 330px;
+  }
+}
+
+@media (max-width: 970px) {
+  .desserts-list {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+@media (max-width: 900px) {
+  .desserts-list {
+    grid-template-columns: repeat(2, 280px);
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+  .cart-container {
+    width: min(100%, 500px);
+    margin-top: 1.7em;
+  }
+}
+
+@media (max-width: 649px) {
+  .desserts-list {
+    grid-template-columns: repeat(1, minmax(auto, 400px));
+  }
+  .content {
+    flex-wrap: wrap;
+    padding: 1em;
+  }
+
+  .desserts-list {
+    margin: 0px;
+  }
+
+  .cart-container {
+    width: min(100%, 500px);
+    margin-top: 1.7em;
+  }
+
+  .modal-content {
+    width: 100% !important;
+  }
+  .modal {
+    align-items: end !important;
+  }
+}
+
+.attribution {
+  font-size: 0.75rem;
+  text-align: center;
+}

@@ -21,268 +21,99 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="./styles/cart.css" />
+    <link rel="stylesheet" href="./styles/dessertCard.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <title>Product list with cart</title>
   </head>
   <body>
-    <div class="container">
+    <div class="content">
       <div class="desserts">
-        <h1 class="title">Desserts</h1>
-        <div class="desserts-wrap">
-          
-          <div class="item">
-            <div class="item-image">
-              <img
-                src="./assets/images/image-waffle-desktop.jpg"
-                class="dessert-image"
-                alt="" />
-              <div class="add" >
-                <i class="fas fa-cart-plus"></i> Add to Cart
+        <h1>Desserts</h1>
+        <ul class="desserts-list">
+          <!-- <li>
+            <div class="dessert-card-container">
+              <div class="dessert-image-container">
+                <img src="assets/images/image-waffle-desktop.jpg" alt="" />
+                <div class="cart-control">
+                  <button class="add-to-cart-btn"><img src="assets/images/icon-add-to-cart.svg" alt=""/><p>Add to Cart<p></button>
+                  <div class="quantity-control" style="display: none">
+                    <button class="quantity-btn minus"><span>-</span></button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn plus"><span>+</span></button>
+                  </div>
+                </div>
+              </div>
+              <div class="dessert-card-description">
+                <p class="dessert-type">Waffle</p>
+                <p class="dessert-name">Waffle with Berries</p>
+                <p class="dessert-price">$6.50</p>
               </div>
             </div>
-            <div class="item-info">
-              <p class="item-name">Waffle</p>
-              <h4 class="name">Waffle with Berries</h4>
-              <span class="price" id="waffle-price"> $6.50 </span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-image">
-              <img
-                src="./assets/images/image-creme-brulee-desktop.jpg"
-                class="dessert-image"
-                alt="" />
-              <div class="add" >
-                <i class="fas fa-cart-plus"></i> Add to Cart
-              </div>
-            </div>
-            <div class="item-info">
-              <p class="item-name">Crème Brûlée</p>
-              <h4 class="name">Vanilla Bean Crème Brûlée</h4>
-              <span class="price" id="brulee-price"> $7.00 </span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-image">
-              <img
-                src="./assets/images/image-macaron-desktop.jpg"
-                class="dessert-image"
-                alt="" />
-              <div class="add" >
-                <i class="fas fa-cart-plus"></i> Add to Cart
-              </div>
-            </div>
-            <div class="item-info">
-              <p class="item-name">Macaron</p>
-              <h4 class="name">Macaron Mix of Five</h4>
-              <span class="price" id="macaron-price"> $8.00 </span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-image">
-              <img
-                src="./assets/images/image-tiramisu-desktop.jpg"
-                class="dessert-image"
-                alt="" />
-              <div class="add" >
-                <i class="fas fa-cart-plus"></i> Add to Cart
-              </div>
-            </div>
-            <div class="item-info">
-              <p class="item-name">Tiramisu</p>
-              <h4 class="name">Classic Tiramisu</h4>
-              <span class="price" id="tiramisu-price"> $5.50 </span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-image">
-              <img
-                src="./assets/images/image-baklava-desktop.jpg"
-                class="dessert-image"
-                alt="" />
-              <div class="add" >
-                <i class="fas fa-cart-plus"></i> Add to Cart
-              </div>
-            </div>
-            <div class="item-info">
-              <p class="item-name">Baklava</p>
-              <h4 class="name">Pistachio Baklava</h4>
-              <span class="price" id="baklava-price"> $4.00 </span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-image">
-              <img
-                src="./assets/images/image-meringue-desktop.jpg"
-                class="dessert-image"
-                alt="" />
-              <div class="add" >
-                <i class="fas fa-cart-plus"></i> Add to Cart
-              </div>
-            </div>
-            <div class="item-info">
-              <p class="item-name">Pie</p>
-              <h4 class="name">Lemon Meringue Pie</h4>
-              <span class="price" id="pie-price"> $5.00 </span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-image">
-              <img
-                src="./assets/images/image-cake-desktop.jpg"
-                class="dessert-image"
-                alt="" />
-              <div class="add" >
-                <i class="fas fa-cart-plus"></i> Add to Cart
-              </div>
-            </div>
-            <div class="item-info">
-              <p class="item-name">Cake</p>
-              <h4 class="name">Red Velvet Cake</h4>
-              <span class="price" id="red-cake-price"> $4.50 </span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-image">
-              <img
-                src="./assets/images/image-brownie-desktop.jpg"
-                class="dessert-image"
-                alt="" />
-              <div class="add" >
-                <i class="fas fa-cart-plus"></i> Add to Cart
-              </div>
-            </div>
-            <div class="item-info">
-              <p class="item-name">Brownie</p>
-              <h4 class="name">Salted Caramel Brownie</h4>
-              <span class="price" id="brownie-price"> $5.50 </span>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="item-image">
-              <img
-                src="./assets/images/image-panna-cotta-desktop.jpg"
-                class="dessert-image"
-                alt="" />
-              <div class="add">
-                <i class="fas fa-cart-plus"></i> Add to Cart
-              </div>
-            </div>
-            <div class="item-info">
-              <p class="item-name">Panna Cotta</p>
-              <h4 class="name">Vanilla Panna Cotta</h4>
-              <span class="price" id="panna-price"> $6.50 </span>
-            </div>
-          </div>
-        </div>
+          </li> -->
+        </ul>
       </div>
-      <div class="cart">
-        <h3>Your Cart(0)</h3>
 
-        <div class="cart-items">
-          <div class="cart-item">
-            <div>
-              <h4>Classic Tiramisu</h4>
-              <p>
-                <span class="item-number"> 1x</span
-                ><span class="each-item">@$5.50</span
-                ><span class="total-price">$5.50</span>
-              </p>
-            </div>
-            <i class="fa-regular fa-circle-xmark"></i>
+      <div class="cart-container">
+        <h2>Your Cart (0)</h2>
+        <div class="cart-dynamic-content" style="display: none">
+          <ul class="cart-items">
+            <!-- <li class="cart-item">
+              <p class="cart-item-name">Waffle</p>
+              <div class="cart-item-details">
+                <p class="cart-item-quantity">1x</p>
+                <p class="cart-item-price">@6.50</p>
+                <p class="cart-item-total-price">$6.50</p>
+                <button class="cart-cancel-item"><span>x</span></button>
+              </div>
+            </li> -->
+          </ul>
+          <div class="cart-order-total"><p>Order total</p></div>
+          <div class="cart-carbon-neutral">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+            <p>This is a <strong>carbon-neutral</strong> delivery</p>
           </div>
-          <div class="cart-item">
-            <div>
-              <h4>Classic Tiramisu</h4>
-              <p>
-                <span class="item-number"> 1x</span
-                ><span class="each-item">@$5.50</span
-                ><span class="total-price">$5.50</span>
-              </p>
-            </div>
-            <i class="fa-regular fa-circle-xmark"></i>
-          </div>
-          <div class="cart-item">
-            <div>
-              <h4>Classic Tiramisu</h4>
-              <p>
-                <span class="item-number"> 1x</span
-                ><span class="each-item">@$5.50</span
-                ><span class="total-price">$5.50</span>
-              </p>
-            </div>
-            <i class="fa-regular fa-circle-xmark"></i>
-          </div>
-          <div class="order-total">
-            <h4>Order Total</h4>
-            <h2 id="total-order">$46.50</h2>
-          </div>
+          <button class="red-btn" id="confirmOrderBtn">Confirm order</button>
         </div>
-        <button class="btn" id="confirm-btn">Confirm Order</button>
-        <p id="message">Your added items will apear here</p>
+        <div class="cart-empty">
+          <img src="./assets/images/illustration-empty-cart.svg" alt="" />
+          <p>Your added items will appear here</p>
+        </div>
       </div>
     </div>
 
-    <div class="confirmation" id="confirmation">
-      <i class="fa-regular fa-circle-check fa-2x"></i>
-      <h1>Order Confirmed</h1>
-      <p>We hope you enjoy your food!</p>
-      <div class="food-list">
-        <div class="food">
-          <div class="food-wrap">
-            <img
-              src="./assets/images/image-baklava-desktop.jpg"
-              class="food-img"
-              alt="" />
-            <div class="food-info">
-              <h4>Baklava</h4>
-              <p><span class="number">1x</span>@$5.50</p>
-            </div>
-          </div>
-          <p class="food-price">$5.50</p>
+    <div class="modal" id="confirmModal">
+      <div class="modal-content">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="" />
+        <h1>Order Confirmed</h1>
+        <p>We hope you enjoy your food</p>
+        <div id="finalOrderSection">
+          <ul id="finalDessertsList">
+            <li class="order-item">
+              <!-- <div class="order-item-details">
+                <img src="./assets/images/image-waffle-thumbnail.jpg" alt="Waffle">
+                <div>
+                  <p class="cart-item-name">Waffle</p>
+                  <p class="cart-item-price"><span class="cart-item-quantity">1x</span> @ $6.50</p>
+                </div>
+                <div class="cart-item-total-price-container">
+                  <p class="cart-item-total-price">$6.50</p>
+                </div>
+              </div> -->
+            </li>
+            <!-- <div class="order-total-section">
+              <p class="order-total-text">Order Total</p>
+              <p class="order-total-amount">$6.50</p>
+            </div> -->
+          </ul>
         </div>
-        <div class="food">
-          <div class="food-wrap">
-            <img
-              src="./assets/images/image-baklava-desktop.jpg"
-              class="food-img"
-              alt="" />
-            <div class="food-info">
-              <h4>Baklava</h4>
-              <p><span class="number">1x</span>@$5.50</p>
-            </div>
-          </div>
-          <p class="food-price">$5.50</p>
-        </div>
-        <div class="food">
-          <div class="food-wrap">
-            <img
-              src="./assets/images/image-baklava-desktop.jpg"
-              class="food-img"
-              alt="" />
-            <div class="food-info">
-              <h4>Baklava</h4>
-              <p><span class="number">1x</span>@$5.50</p>
-            </div>
-          </div>
-          <p class="food-price">$5.50</p>
-        </div>
-        <div class="total">
-          <p>Order Total</p>
-          <h2>$46.50</h2>
-        </div>
+        <button id="newOrderBtn" class="red-btn">Start New Order</button>
       </div>
-      <button class="btn">Start New Order</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

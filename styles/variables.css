@@ -1,0 +1,26 @@
+:root {
+  --color-primary: hsl(14, 86%, 42%);
+  --color-primary-dark: hsl(14, 86%, 32%);
+  --color-secondary: hsl(12, 20%, 44%);
+  --color-background: hsl(20, 50%, 98%);
+  --color-text: hsl(14, 65%, 9%);
+  --color-underline: hsl(13, 31%, 94%);
+  --color-white: #fff;
+  
+  --border-radius-sm: 8px;
+  --border-radius: 15px;
+  --border-radius-lg: 100px;
+  
+  --transition-speed: 0.3s;
+  
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+}
